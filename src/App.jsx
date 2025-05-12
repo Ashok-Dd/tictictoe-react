@@ -50,9 +50,9 @@ const App = () => {
         ))}
       </div>
 
-      <div className=" w-[200px] h-[200px]  sm:w-full max-w-[400px] sm:h-full max-h-[400px] flex flex-wrap justify-evenly gap-1 items-center">
+      <div className=" w-[300px] h-[300px]  sm:w-full max-w-[400px] sm:h-full max-h-[400px] flex flex-wrap justify-evenly gap-1 items-center">
         {board.map((box, index) => (
-          <div key={index} onClick={() => handleArray(index)} className={`w-[32%] h-[32%] hover:w-[31.5%] hover:h-[31.5%] transition duration-300 ease-in-out bg-zinc-800 border-white  hover:bg-zinc-900 cursor-pointer rounded-xl  ${box === 'X' ? "text-blue-400" : "text-red-400"} flex items-center justify-center text-6xl font-bold`}>{box}</div>
+          <div key={index} onClick={() => handleArray(index)} className={`w-[32%] h-[32%] hover:w-[31.5%] hover:h-[31.5%] transition duration-300 ease-in-out bg-zinc-800 border-white  hover:bg-zinc-900 cursor-pointer rounded-xl  ${box === 'X' ? "text-blue-400" : "text-red-400"} flex items-center justify-center text-4xl sm:text-6xl font-bold`}>{box}</div>
         ))}
       </div>
 
