@@ -44,6 +44,7 @@ const App = () => {
 
   return (
     <div className="flex flex-col gap-10 items-center bg-black justify-center h-screen w-full">
+
       <div className="text-4xl sm:text-6xl font-bold flex gap-2">
         {title.map((letter, index) => (
           <div key={index} className={`cursor-default ${index % 2 === 0 ? "text-pink-500" : "text-blue-400"}`}>{letter}</div>
@@ -62,6 +63,7 @@ const App = () => {
           <button onClick={resetGame} className="bg-green-500 border-2 border-black text-2xl transition duration-800 ease-in-out hover:ring-2 ring-green-400 px-3 py-1 rounded-lg text-white font-semibold">Restart</button>
         </div>
       )}
+      {!winner && (<div className="h-10"></div>)}
     </div>
   );
 };
